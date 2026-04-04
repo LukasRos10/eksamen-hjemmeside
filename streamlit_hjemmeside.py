@@ -1,7 +1,7 @@
 from filecmp import clear_cache
 import streamlit as st
 import pandas as pd
-
+st.set_page_config(layout="wide")
 st.set_page_config(page_title="Velkommen til eksamen", )
 
 st.title("Velkommen til vores eksamen i _____")
@@ -39,7 +39,7 @@ with col5:
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    st.set_page_config(layout="wide")
+
     st.header("beskrivelse af problemstilling")
     st.subheader("Hvordan kan folkekirken få flere medlemmer?")
     st.write("Vores problemstilling handler om hvordan folkekirken kan få flere medlemmer")
