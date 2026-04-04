@@ -11,7 +11,7 @@ st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____
 
 st.header("Vores problemformulering er _________")
 
-
+st.write("")
 st.write("Her er vores kildeliste:")
 col1, col2, col3, col4, col5 = st.columns(5)
 
@@ -35,7 +35,7 @@ with col5:
     st.markdown("- [Kilde 5](https://www.kilde5.com)")
     st.image("https://image2url.com/r2/default/images/1775336000578-8b83a6f9-c42f-4746-a18f-05f24a7fd2a1.jpg", width=100)
 
-
+st.write("")
 
 col1, col2, col3 = st.columns(3)
 with col1:
