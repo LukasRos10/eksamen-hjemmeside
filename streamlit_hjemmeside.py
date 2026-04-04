@@ -22,7 +22,7 @@ st.image("https://newyorkerbyheart.dk/wp-content/uploads/2022/04/gammeldags-pand
 with col2:
     st.markdown("- [Kilde 2](https://www.kilde2.com)")
 #sæt et billede ind i kolonne 2
-st.image("https://image2url.com/r2/default/images/1775306768660-aafd1dac-cffe-4578-b067-9e3136c68ede.jpg", width=100)
+st.image("https://image2url.com/r2/default/images/1775306768660-aafd1dac-cffe-4578-b067-9e3136c68ede.jpg", width=90)
 
 with col3:
     st.markdown("- [Kilde 3](https://www.kilde3.com)")
