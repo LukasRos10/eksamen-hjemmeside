@@ -9,7 +9,7 @@ st.title("Velkommen til vores eksamen i _____")
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
 
 
-st.write("Vores problemformulering er _________")
+st.header("Vores problemformulering er _________")
 
 
 st.write("Her er vores kildeliste:")
