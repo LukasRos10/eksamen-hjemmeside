@@ -11,10 +11,10 @@ st.title("Velkommen til vores eksamen i _____")
 
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
 
-
+st.space("small")
 st.header("Vores problemformulering er _________")
 
-st.write("")
+st.space("medium")
 st.write("Her er vores kildeliste:")
 col1, col2, col3, col4, col5 = st.columns(5)
 
