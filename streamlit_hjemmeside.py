@@ -6,7 +6,7 @@ st.set_page_config(layout="wide")
 st.set_page_config(page_title="Velkommen til eksamen", )
 
 st.date_input("Dato for eksamen:", value=datetime.date.today())
-st.warning("Husk det her er eksamen, så tag jer fucking sammen")
+st.warning("Personlig note:Husk det her er eksamen, så tag jer fucking sammen")
 st.title("Velkommen til vores eksamen i _____")
 
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
