@@ -49,8 +49,10 @@ with col1:
 
 with col2:
     st.header("Beskrivelse af metode")
+    st.subheader("Metodisk fremgang")
     st.write("Vi har brugt en spørgeskemaundersøgelse for at finde ud af hvad folkekirkens medlemmer synes om deres medlemskab")
 
 with col3:
     st.header("Beskrivelse af resultater")
+    st.subheader("Vores resultater")
     st.write("Vi fandt ud af at mange medlemmer er utilfredse med folkekirken og derfor overvejer at melde sig ud")
