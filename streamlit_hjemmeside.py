@@ -8,7 +8,7 @@ st.title("Velkommen til vores eksamen i _____")
 
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
 
-
+st.balloons()
 st.header("Vores problemformulering er _________")
 
 st.write("")
