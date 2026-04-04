@@ -40,6 +40,7 @@ with col5:
 col1, col2, col3 = st.columns(3)
 with col1:
     st.header("beskrivelse af problemstilling")
+    st.subheader("Hvordan kan folkekirken få flere medlemmer?")
     st.write("Vores problemstilling handler om hvordan folkekirken kan få flere medlemmer")
 
 with col2:
