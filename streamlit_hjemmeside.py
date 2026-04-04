@@ -17,7 +17,7 @@ col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
     st.markdown("- [Kilde 1](https://www.kilde1.com)")
-st.image("https://newyorkerbyheart.dk/wp-content/uploads/2022/04/gammeldags-pandekager-1.jpg", width=300)
+st.image("https://newyorkerbyheart.dk/wp-content/uploads/2022/04/gammeldags-pandekager-1.jpg", width=150)
 
 with col2:
     st.markdown("- [Kilde 2](https://www.kilde2.com)")
