@@ -29,7 +29,7 @@ with col3:
 
 with col4:
     st.markdown("- [Kilde 4](https://www.kilde4.com)")
-    st.image("https://image2url.com/r2/default/images/1775335935496-b86386d9-32af-4ede-a2f7-2d8bf44f197c.jpg", width=100)
+    st.image("https://image2url.com/r2/default/images/1775338132154-b7c91706-632e-48fd-b7c0-dd96fc4583c7.png", width=100)
 
 with col5:
     st.markdown("- [Kilde 5](https://www.kilde5.com)")
