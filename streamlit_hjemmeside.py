@@ -58,40 +58,7 @@ with col3:
     st.write("Vi fandt ud af at mange medlemmer er utilfredse med folkekirken og derfor overvejer at melde sig ud")
 
 
-
-
-
-
-st.title("Chatbot baseret på kildeliste")
-
-# --- DINE KILDER HER ---
-kilder = {
-    "Danmarks statistik": "En graf da dst.dk viser at antallet af medlemmer i den danske folkekirke er faldet fra 90% i 1990 til 75% i 2020",
-    "Kristelig dagblad": "Kristeligt Dagblad skriver at mange unge melder sig ud af folkekirken fordi de ikke føler at de får noget ud af at være der og hellere vil være sociale",
-    "Testside.dk": "Testside.dk nævner at en ekspert har sagt i et interview at antallet af udmeldinger af folkekirken kan være et tilfældigt udsving",
-}
-# ------------------------
-
-# Kombiner alle kilder til én tekst
-samlet_kildetekst = "\n\n".join([f"{navn}: {tekst}" for navn, tekst in kilder.items()])
-
-# Chat input
-spørgsmål = st.text_input("Stil et spørgsmål:")
-
-if spørgsmål:
-    # Simpel “chatbot”: Den svarer kun ud fra kilderne
-    svar = f"""
-Jeg har kigget i dine kilder og her er et svar baseret på dem:
-
-**Spørgsmål:** {spørgsmål}
-
-**Svar (baseret på kilderne):**
-Jeg kan kun svare ud fra følgende kilder:
-
-{samlet_kildetekst}
-
-Ud fra det ser det ud til, at:
-- (Her kan du selv skrive logik til at matche tekst)
-    """
-
-    st.write(svar)
+st.toggle("Vis vores konklusion", key="konklusion")
+if st.session_state.konklusion:
+    st.header("Konklusion")
+    st.write("Vores konklusion er at folkekirken skal fokusere på at forbedre deres medlemsoplevelse for at få flere medlemmer")
