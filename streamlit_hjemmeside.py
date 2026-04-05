@@ -3,6 +3,7 @@ from unicodedata import name
 import streamlit as st
 import pandas as pd
 import datetime
+import docx
 st.set_page_config(layout="wide")
 st.set_page_config(page_title="Velkommen til eksamen", )
 
@@ -89,3 +90,59 @@ if question:
 
     st.write("### Mit svar (baseret på kilderne):")
     st.write("- Her kan du selv skrive logik til at finde det rigtige svar")
+
+
+
+
+
+import streamlit as st
+import docx
+
+st.header("Chatbot der selv læser og omskriver kildemateriale")
+
+# Funktion til at læse Word-dokument
+def read_docx(file):
+    doc = docx.Document(file)
+    full_text = []
+    for para in doc.paragraphs:
+        if para.text.strip():
+            full_text.append(para.text)
+    return "\n".join(full_text)
+
+# Upload af kildemateriale
+uploaded_file = st.file_uploader("Upload dit kildemateriale (.docx)", type=["docx"])
+
+if uploaded_file:
+    kildetekst = read_docx(uploaded_file)
+    st.success("Kildemateriale indlæst!")
+
+    # Brugeren stiller et spørgsmål
+    question = st.text_input("Stil et spørgsmål til chatbotten:")
+
+    if question:
+        st.write("### Du spurgte:")
+        st.success(question)
+
+        # Find relevante sætninger
+        relevante = []
+        for linje in kildetekst.split("."):
+            for ord in question.lower().split():
+                if ord in linje.lower() and linje not in relevante:
+                    relevante.append(linje.strip())
+
+        st.write("### Chatbot-svar:")
+
+        if relevante:
+            # Omskrivning: lav et nyt svar i stedet for at gentage teksten
+            svar = " ".join(relevante)
+
+            # Enkel omskrivning: tilføj forklaring og omformulér
+            omskrevet = (
+                "Ud fra kildematerialet kan det forklares sådan her: "
+                + svar.replace("er", "ser ud til at være").replace("at", "at man kan se at")
+            )
+
+            st.write(omskrevet)
+
+        else:
+            st.write("Jeg kunne ikke finde noget i kildematerialet, der matcher dit spørgsmål.")
