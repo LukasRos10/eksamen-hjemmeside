@@ -12,7 +12,7 @@ st.warning("Personlig note: Husk det her er eksamen, så tag jer fucking sammen"
 st.title("Velkommen til vores eksamen i _____")
 
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
-st.write
+
 st.space("small")
 st.header("Vores problemformulering er _________")
 
