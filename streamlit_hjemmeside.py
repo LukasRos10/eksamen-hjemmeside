@@ -27,7 +27,7 @@ with col2:
     st.image("https://image2url.com/r2/default/images/1775306768660-aafd1dac-cffe-4578-b067-9e3136c68ede.jpg", width=100)
 
 with col3:
-    st.markdown("- [Hestside.dk](https://www.kilde3.com)")
+    st.markdown("- [Testside.dk](https://www.kilde3.com)")
     st.image("https://image2url.com/r2/default/images/1775335870643-37b4fa95-4458-4c6a-ac08-98fe15c49567.webp", width=100)
 
 with col4:
