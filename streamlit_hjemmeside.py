@@ -79,7 +79,7 @@ if uploaded_file:
     kildetekst = read_docx(uploaded_file)
     st.success("Kildemateriale indlæst!")
 
-    # Brugeren stiller et spørgsmål
+    # Brugeren stiller et godt spørgsmål
     question = st.text_input("Stil et spørgsmål til chatbotten:")
 
     if question:
