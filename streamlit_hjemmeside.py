@@ -3,7 +3,7 @@ from unicodedata import name
 import streamlit as st
 import pandas as pd
 import datetime
-import docx
+
 st.set_page_config(layout="wide")
 st.set_page_config(page_title="Velkommen til eksamen", )
 
