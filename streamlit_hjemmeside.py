@@ -59,42 +59,6 @@ with col3:
     st.subheader("Vores resultater")
     st.write("Vi fandt ud af at mange medlemmer er utilfredse med folkekirken og derfor overvejer at melde sig ud")
 
-st.header("Chatbot baseret på vores kilder")
-
-# --- DINE KILDER (indsæt tekst fra Word-dokumenter her) ---
-kilder = {
-    "Graf fra Danmarks statistik": """
-Grafen fra Danmarks statistik viser at antallet af medlemmer er faldet fra 90% i 1990 til 75% i 2020
-""",
-    "Kristeligt dagblad": """
-En ekspert fra kristeligt dagblad fortæller i et interview at det faldende medlemstal højst sandsynligt er et tilfældigt udsving, men at folkekirken alligevel skal gøre mere for at få unge til
-""",
-}
-# -----------------------------------------------------------
-
-# Kombiner alle kilder til én tekst
-samlet_kildetekst = "\n\n".join(
-    [f"{navn}: {tekst}" for navn, tekst in kilder.items()]
-)
-
-# Få et spørgsmål fra brugeren
-question = st.text_input("Stil et spørgsmål til vores chatbot her:", key="question")
-
-if question:
-    st.success("Du spurgte: " + question)
-
-    st.write("### Svar baseret på dine kilder:")
-
-    # Simpelt svar: vis kilderne og lad chatbotten svare ud fra dem
-    st.write(samlet_kildetekst)
-
-    st.write("### Mit svar (baseret på kilderne):")
-    st.write("- Her kan du selv skrive logik til at finde det rigtige svar")
-
-
-
-
-
 import streamlit as st
 import docx
 
@@ -146,3 +110,5 @@ if uploaded_file:
 
         else:
             st.write("Jeg kunne ikke finde noget i kildematerialet, der matcher dit spørgsmål.")
+
+
