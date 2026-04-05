@@ -5,8 +5,11 @@ import pandas as pd
 import datetime
 
 import docx
-st.set_page_config(layout="wide")
-st.set_page_config(page_title="Velkommen til eksamen", )
+st.set_page_config(
+    page_title="Velkommen til eksamen",
+    layout="wide"
+)
+
 
 st.date_input("Dato for eksamen:", value=datetime.date.today())
 st.warning("Personlig note: Husk det her er eksamen, så tag jer fucking sammen")
