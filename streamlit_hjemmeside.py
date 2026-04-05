@@ -4,8 +4,7 @@ import streamlit as st
 import pandas as pd
 import datetime
 
-from docx import Document
-
+import python_docx
 st.set_page_config(
     page_title="Velkommen til eksamen",
     layout="wide"
