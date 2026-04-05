@@ -65,7 +65,7 @@ st.header("Chatbot der selv læser og omskriver kildemateriale")
 
 # Funktion til at læse Word-dokument
 def read_docx(file):
-    doc = docx.Document(file)
+    from docx import Document
     full_text = []
     for para in doc.paragraphs:
         if para.text.strip():
