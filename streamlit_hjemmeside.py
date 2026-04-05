@@ -60,7 +60,6 @@ with col3:
     st.write("Vi fandt ud af at mange medlemmer er utilfredse med folkekirken og derfor overvejer at melde sig ud")
 
 import streamlit as st
-import docx
 
 st.header("Chatbot der selv læser og omskriver kildemateriale")
 
