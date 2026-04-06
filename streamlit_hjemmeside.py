@@ -3,6 +3,7 @@ from unicodedata import name
 import streamlit as st
 import pandas as pd
 import datetime
+import time
 
 
 st.set_page_config(
@@ -12,7 +13,7 @@ st.set_page_config(
 
 
 st.date_input("Dato for eksamen:", value=datetime.date.today())
-
+st.time_input("Tidspunkt for eksamen:", value=datetime.time(9, 0))
 st.title("Velkommen til vores eksamen i _____")
 
 st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____, hvor vi har arbejdet med _____ og _____.")
