@@ -19,7 +19,13 @@ st.write("Vi har lavet denne hjemmeside for at præsentere vores eksamen i _____
 
 st.space("small")
 st.header("Vores problemformulering er _________")
-
+st.space("small")
+st.write("Begrebsafklaring/forklaring")
+st.markdown("<li>1: integration</li>")
+st.markdown("<li>2: segularisering</li>")
+st.markdown("<li>3: assimilation</li>")
+st.markdown("<li>4: segregation</li>")
+st.markdown("<li>5: Næstekærlighed</li>")
 st.space("medium")
 st.write("Her er vores kildeliste:")
 col1, col2, col3, col4, col5 = st.columns(5)
