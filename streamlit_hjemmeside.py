@@ -1,10 +1,11 @@
 from filecmp import clear_cache
 from unicodedata import name
+from wsgiref.handlers import format_date_time
 import streamlit as st
 import pandas as pd
 import datetime
-import clock
 
+format_date_time(datetime.datetime.now().timestamp())
 
 st.set_page_config(
     page_title="Velkommen til eksamen",
@@ -13,8 +14,7 @@ st.set_page_config(
 
 
 st.date_input("Dato for eksamen:", value=datetime.date.today())
-updateClock();
-setInterval(updateClock, 1000);
+
 
 st.title("Velkommen til vores eksamen i _____")
 
