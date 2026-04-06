@@ -30,6 +30,7 @@ st.markdown("4: Segregation")
 st.markdown("5: Næstekærlighed")
 st.space("medium")
 st.subheader("Kildeliste:")
+st.write("Potentiel kort bekrivelse af vigtige personer nævnt i kilderne, hvorfor de er vigtige og et billede af vedkommende:")
 col1, col2, col3, col4, col5 = st.columns(5)
 
 with col1:
