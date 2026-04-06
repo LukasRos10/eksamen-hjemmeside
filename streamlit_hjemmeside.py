@@ -1,11 +1,10 @@
 from filecmp import clear_cache
 from unicodedata import name
-from wsgiref.handlers import format_date_time
 import streamlit as st
 import pandas as pd
 import datetime
 
-format_date_time(datetime.datetime.now().timestamp())
+
 
 st.set_page_config(
     page_title="Velkommen til eksamen",
