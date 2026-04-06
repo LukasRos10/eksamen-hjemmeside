@@ -3,7 +3,7 @@ from unicodedata import name
 import streamlit as st
 import pandas as pd
 import datetime
-import time
+import clock
 
 
 st.set_page_config(
